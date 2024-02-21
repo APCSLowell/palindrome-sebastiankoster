@@ -43,7 +43,9 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
     String sNew = new String();
-    //your code here
+    for(int i =str.length-1; i>-1;i++)
+        sNew+=str.charAt(i);
+    
     return sNew;
 }
 }
