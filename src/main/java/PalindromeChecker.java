@@ -44,7 +44,7 @@ public String reverse(String str)
 {
     int length = str.length();
     String sNew = new String();
-    for(int i =length; i>-1;i++)
+    for(int i =length; i>-1;i--)
         sNew+=str.charAt(i);
     
     return sNew;
