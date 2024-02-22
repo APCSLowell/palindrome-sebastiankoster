@@ -36,35 +36,35 @@ public void tester()
   }
 }
 public boolean palindrome(String str){
-   String balls = noSpaces(onlyLetters(noCapitals(str)));
-   String string = reverse(balls);
-   if(balls.equals(string)) return true;
+   String lebron = noSpaces(onlyLetters(noCapitals(str)));
+   String string = reverse(lebron);
+   if(lebron.equals(string)) return true;
   return false; 
 }
   
 public String reverse(String sWord){
-  String balls = "";
+  String lebron = "";
   for(int i = sWord.length(); i > 0; i--){
-    balls = balls + sWord.substring(i-1,i);
+    lebron = lebron + sWord.substring(i-1,i);
   }
-  return balls;
+  return lebron;
 }
 
 public String onlyLetters(String sString){
-  String balls = "";
+  String lebron = "";
   for(int i = 0; i < sString.length(); i++){
-    if(Character.isLetter(sString.charAt(i))) balls = balls + sString.substring(i,i+1); 
+    if(Character.isLetter(sString.charAt(i))) lebron = lebron + sString.substring(i,i+1); 
   }
-return balls; 
+return lebron; 
 }
 
 public String noSpaces(String sWord){
-  String balls = "";
+  String lebron = "";
   //find positions
   for(int i = 0; i < sWord.length(); i++){
-    if(!sWord.substring(i,i+1).equals(" ")) balls = balls + sWord.substring(i,i+1); 
+    if(!sWord.substring(i,i+1).equals(" ")) lebron = lebron + sWord.substring(i,i+1); 
   }
-  return balls; 
+  return lebron; 
   //remove positions from string????????
 }
 
