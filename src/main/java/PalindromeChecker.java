@@ -36,18 +36,18 @@ public void tester()
   }
 }
 public boolean palindrome(String str){
-   String balls = noSpaces(onlyLetters(noCapitals(str)));
-   String string = reverse(balls);
-   if(balls.equals(string)) return true;
+   String noballs = noSpaces(onlyLetters(noCapitals(str)));
+   String string = reverse(noballs);
+   if(noballs.equals(string)) return true;
   return false; 
 }
   
 public String reverse(String sWord){
-  String balls = "";
+  String s14 = "";
   for(int i = sWord.length(); i > 0; i--){
-    balls = balls + sWord.substring(i-1,i);
+    s14 = s14 + sWord.substring(i-1,i);
   }
-  return balls;
+  return s14;
 }
 
 public String onlyLetters(String sString){
@@ -64,7 +64,7 @@ public String noSpaces(String sWord){
   for(int i = 0; i < sWord.length(); i++){
     if(!sWord.substring(i,i+1).equals(" ")) s12 = s12 + sWord.substring(i,i+1); 
   }
-  return s13; 
+  return s12; 
 }
 
 public String noCapitals(String sWord){
