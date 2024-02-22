@@ -36,37 +36,43 @@ public void tester()
   }
 }
 public boolean palindrome(String str){
-   String noballs = noSpaces(onlyLetters(noCapitals(str)));
-   String string = reverse(noballs);
-   if(noballs.equals(string)) return true;
+   String balls = noSpaces(onlyLetters(noCapitals(str)));
+   String string = reverse(balls);
+   if(balls.equals(string)) return true;
   return false; 
 }
   
 public String reverse(String sWord){
-  String s14 = "";
+  String balls = "";
   for(int i = sWord.length(); i > 0; i--){
-    s14 = s14 + sWord.substring(i-1,i);
+    balls = balls + sWord.substring(i-1,i);
   }
-  return s14;
+  return balls;
 }
 
 public String onlyLetters(String sString){
-  String s13 = "";
+  String balls = "";
   for(int i = 0; i < sString.length(); i++){
-    if(Character.isLetter(sString.charAt(i))) s13 = s13 + sString.substring(i,i+1); 
+    if(Character.isLetter(sString.charAt(i))) balls = balls + sString.substring(i,i+1); 
   }
-return s13; 
+return balls; 
 }
 
 public String noSpaces(String sWord){
-  String s12 = "";
+  String balls = "";
   //find positions
   for(int i = 0; i < sWord.length(); i++){
-    if(!sWord.substring(i,i+1).equals(" ")) s12 = s12 + sWord.substring(i,i+1); 
+    if(!sWord.substring(i,i+1).equals(" ")) balls = balls + sWord.substring(i,i+1); 
   }
-  return s12; 
+  return balls; 
+  //remove positions from string????????
 }
 
 public String noCapitals(String sWord){
   return sWord.toLowerCase();
+}
+  
+  
+  
+
 }
